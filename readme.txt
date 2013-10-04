@@ -7,11 +7,11 @@ Stable tag: trunk
 License: GPLv2 or later
 Version: 1.3
 
-DeMomentSomTres Catalog shows your product portfolio in the website.
+DeMomentSomTres Wine Catalog shows your product portfolio in the website.
 
 == Description ==
 
-DeMomentSomTres Catalog shows your product portfolio in the website. Specifically designed for wine cellars and wine shops.
+DeMomentSomTres Wine Catalog shows your product portfolio in the website. Specifically designed for wine cellars and wine shops.
 
 == Installation ==
 
