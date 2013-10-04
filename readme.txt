@@ -1,11 +1,11 @@
-=== DeMomentSomTres Wine Catalog ===
+=== DeMomentSomTres Address ===
 Contributors: marcqueralt
 Tags: product portfolio, wines
 Requires at least: 3.2.1
 Tested up to: 3.5
 Stable tag: trunk
 License: GPLv2 or later
-Version: 1.2.1
+Version: 1.3
 
 DeMomentSomTres Catalog shows your product portfolio in the website.
 
@@ -23,11 +23,13 @@ Upload the plugin.
 N/A
 
 == Changelog ==
-=1.2.1=
-*Bug: plugin name badly informed
+=1.3=
+*Products in the mark widget adds text only version
 
 =1.2=
 *Products in the mark widget
 *Mark Description widget
 *Mark Logo widget
 *Product Name Widget
+
+== Next Steps ==

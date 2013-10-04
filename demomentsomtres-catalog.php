@@ -1,9 +1,9 @@
 <?php
 /*
-  Plugin Name: DeMomentSomTres Wine Catalog
+  Plugin Name: DeMomentSomTres Catalog
   Plugin URI: http://demomentsomtres.com/catala
   Description: Shows your products in the web based on marks and product types. The shortcode [demomentsomtres-product-mark cols=n] shows all the products in the same mark than the current product. You also can include "echo dmst_catalog_shortcode($attr);" in your template to show the same contents.
-  Version: 1.2.1
+  Version: 1.3
   Author: Marc Queralt
   Author URI: http://demomentsomtres.com/
   License: GPLv2
@@ -107,63 +107,6 @@ function dmst_create_catalog() {
 
 add_action('widgets_init', create_function('', 'return register_widget("ProductNameWidget");'));
 
-//function dmst_catalog_shortcode($attr) {
-//    global $post;
-//    $result = '';
-//    if (isset($attr['cols'])):
-//        $cols = $attr['cols'];
-//    else:
-//        $cols = 4;
-//    endif;
-//    $tax_mark = wp_get_post_terms($post->ID, 'product-mark', array());
-//    if (!isset($tax_mark[0])):
-//        return '';
-//    endif;
-//    $mark = $tax_mark[0];
-//    $args = array(
-//        'post_type' => 'product',
-//        'tax_query' => array(
-//            array(
-//                'taxonomy' => 'product-mark',
-//                'field' => 'slug',
-//                'terms' => $mark->slug
-//            )
-//        ),
-//        'orderby' => 'name',
-//        'order' => 'ASC',
-//        'nopaging' => 'true'
-//    );
-//    $query = new WP_Query($args);
-//    $products = $query->posts;
-//    $i = 0;
-//    $result .= '<div class="dmst_catalog_category">';
-//    if ($mark->description == ''):
-//        $title = $mark->title;
-//    else:
-//        $title = $mark->description;
-//    endif;
-//    $result .= '<h2>' . $title . '</h2>';
-//    foreach ($products as $product):
-//        $i = ($i + 1) % $cols;
-//        if ($i == 0):
-//            $classe = " last";
-//        else:
-//            $classe = "";
-//        endif;
-//        $result .= '<a class="product_image" href="' . get_permalink($product->ID) . '">';
-//        $result .= '<div class="dmst_catalog_product' . $classe . '>';
-//        if (has_post_thumbnail($product->ID)):
-//            $result .= get_the_post_thumbnail($product->ID, 'medium');
-//        else:
-//            $result .= '<p class="no_image">' . __('No image', DMST_CATALOG_DOMAIN) . '</p>';
-//        endif;
-//        $result .= '</a>';
-//        $result .= '</div>';
-//    endforeach;
-//    $result.='</div>';
-//    return $result;
-//}
-
 class ProductsInCategoryWidget extends WP_Widget {
 
     function ProductsInCategoryWidget() {
@@ -172,13 +115,20 @@ class ProductsInCategoryWidget extends WP_Widget {
 
     function form($instance) {
         $title = esc_attr($instance['title']);
+        $mode = isset($instance['mode']) ? $instance['mode'] : 'image';
         ?>
         <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
+        <p>
+            <label for="<?php echo $this->get_field_id('mode'); ?>"><?php _e('Mode', DMST_CATALOG_DOMAIN); ?></label> 
+            <input id="<?php echo $this->get_field_id('mode'); ?>" name="<?php echo $this->get_field_name('mode'); ?>" type="radio" value="text" <?php checked("text" == $mode); ?>><?php _e('Text', DMST_CATALOG_DOMAIN); ?></radio>
+        <input id="<?php echo $this->get_field_id('mode'); ?>" name="<?php echo $this->get_field_name('mode'); ?>" type="radio" value="image" <?php checked("image" == $mode); ?>><?php _e('Image', DMST_CATALOG_DOMAIN); ?></radio>
+        </p>
         <?php
     }
 
     function update($new_instance, $old_instance) {
         $new_instance['title'] = strip_tags($new_instance['title']);
+        $new_instance['mode'] = isset($new_instance['mode']) ? $new_instance['mode'] : 'image';
         return $new_instance;
     }
 
@@ -215,7 +165,11 @@ class ProductsInCategoryWidget extends WP_Widget {
                     else:
                         echo '<a href="' . $product->guid . '" title="' . $product->post_title . '">';
                     endif;
-                    echo get_the_post_thumbnail($product->ID, 'medium');
+                    if ("text" == $instance['mode']):
+                        echo "<span class='demomentsomtres-catalog-product'>$product->post_title</span>";
+                    else:
+                        echo get_the_post_thumbnail($product->ID, 'medium');
+                    endif;
                     echo '</a>';
                 endforeach;
                 echo $after_widget;
@@ -342,7 +296,7 @@ function dmst_catalog_mark_shortcode($attr) {
     );
     $resultat = '';
     $marks = get_terms('product-mark', $args);
-    $i=0;
+    $i = 0;
     foreach ($marks as $mark):
         $queryArgs = array(
             'post_type' => 'product',
@@ -360,31 +314,31 @@ function dmst_catalog_mark_shortcode($attr) {
         $newQuery = new WP_Query();
         $newQuery->query($queryArgs);
         $products = $newQuery->posts;
-        if(isset($products[0])):
-            $p=$products[0];
-            $url=get_permalink($p->ID);
-            $title=$p->post_title;
+        if (isset($products[0])):
+            $p = $products[0];
+            $url = get_permalink($p->ID);
+            $title = $p->post_title;
         else:
-            $url='#';
-            $title='';
+            $url = '#';
+            $title = '';
         endif;
         if (function_exists('s8_get_taxonomy_image_src')):
             $image_src = s8_get_taxonomy_image_src($mark, 'medium');
         else:
             $image_src = false;
         endif;
-        $resultat .= "<a href='".$url."' title='".$title."'>";
+        $resultat .= "<a href='" . $url . "' title='" . $title . "'>";
         if (false != $image_src):
             $src = $image_src['src'];
             $width = $image_src['width'];
             $height = $image_src['height'];
             $resultat .= "<img src='$src' width=$width height=$height class='product-mark-logo alignnone'/>";
         else:
-            $resultat .= "<span class='product-mark-logo'>".$mark->name."</span>";
+            $resultat .= "<span class='product-mark-logo'>" . $mark->name . "</span>";
         endif;
         $resultat .= '</a>';
         $i++;
-        if($i%$cols==0):
+        if ($i % $cols == 0):
             $resultat.='<br/>';
         endif;
     endforeach;
