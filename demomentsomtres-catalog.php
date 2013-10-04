@@ -3,13 +3,10 @@
   Plugin Name: DeMomentSomTres Catalog
   Plugin URI: http://demomentsomtres.com/catala
   Description: Shows your products in the web based on marks and product types. The shortcode [demomentsomtres-product-mark cols=n] shows all the products in the same mark than the current product. You also can include "echo dmst_catalog_shortcode($attr);" in your template to show the same contents.
-  Version: 1.3
+  Version: 1.4
   Author: Marc Queralt
   Author URI: http://demomentsomtres.com/
   License: GPLv2
- * Change history
- * V1.1 New taxonomy Product Region. Catalan & Spanish translation.
- * v1.0 Initial version
  */
 define('DMST_CATALOG_DOMAIN', 'dmst-catalog');
 
@@ -344,4 +341,75 @@ function dmst_catalog_mark_shortcode($attr) {
     endforeach;
     return $resultat;
 }
+
+// v1.4
+define('DMST_CATALOG_SALES_URL', 'dms3_catalog_sales_url');
+add_action('add_meta_boxes', 'demomentsomtres_catalog_add_metaboxes');
+
+function demomentsomtres_catalog_add_metaboxes() {
+    add_meta_box('dms3-catalog-url', __('Sales URL', DMST_CATALOG_DOMAIN), 'demomentsomtres_catalog_url_metabox', 'product', 'normal', 'high');
+}
+
+function demomentsomtres_catalog_url_metabox($post) {
+    $sales_url = get_post_meta($post->ID, DMST_CATALOG_SALES_URL, true);
+
+    echo '<p>';
+    echo __('URL', DMST_CATALOG_DOMAIN) . ': ';
+    echo '<input type="text" size="100" name="' . DMST_CATALOG_SALES_URL . '" value="' . esc_attr($sales_url) . '" />';
+    echo'</p>';
+}
+
+add_action('save_post', 'demomentsomtres_catalog_save_post');
+
+function demomentsomtres_catalog_save_post($post_id) {
+    if (isset($_POST[DMST_CATALOG_SALES_URL])):
+        update_post_meta($post_id, DMST_CATALOG_SALES_URL, strip_tags($_POST[DMST_CATALOG_SALES_URL]));
+    endif;
+}
+
+class ProductSalesURLWidget extends WP_Widget {
+
+    function ProductSalesURLWidget() {
+        parent::WP_Widget(false, $name = 'Product Sales URL');
+    }
+
+    function form($instance) {
+        $title = esc_attr($instance['title']);
+        $label = esc_attr($instance['label']);
+        ?>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('lable'); ?>"><?php _e('URL Label:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('label'); ?>" name="<?php echo $this->get_field_name('label'); ?>" type="text" value="<?php echo $label; ?>" /></label></p>
+        <?php
+    }
+
+    function update($new_instance, $old_instance) {
+        $new_instance['title'] = strip_tags($new_instance['title']);
+        $new_instance['label'] = strip_tags($new_instance['label']);
+        return $new_instance;
+    }
+
+    function widget($args, $instance) {
+        extract($args);
+        global $post;
+        $sales_url = get_post_meta($post->ID, DMST_CATALOG_SALES_URL, true);
+        $title = apply_filters('widget_title', $instance['title']);
+        $label = $instance['label'];
+        //echo '<pre class="invisible">' . print_r($instance, true) . '</pre>';
+        if ($sales_url != ''):
+            echo $before_widget;
+            if ($title)
+                echo $before_title . $title . $after_title;
+            echo '<a href="' . $sales_url . '" target="_blank" class="dms3_catalog_sales_url">';
+            if ($label)
+                echo $label;
+            else
+                echo $post->post_title;
+            echo '</a>';
+            echo $after_widget;
+        endif;
+    }
+
+}
+
+add_action('widgets_init', create_function('', 'return register_widget("ProductSalesURLWidget");'));
 ?>

@@ -1,4 +1,4 @@
-=== DeMomentSomTres Address ===
+=== DeMomentSomTres Wine Catalog ===
 Contributors: marcqueralt
 Tags: product portfolio, wines
 Requires at least: 3.2.1
@@ -23,13 +23,18 @@ Upload the plugin.
 N/A
 
 == Changelog ==
+=1.4=
+* New field to inform sales URL
+* Widget to show sales URL
+
 =1.3=
 *Products in the mark widget adds text only version
+
+=1.2.1=
+*Bug: plugin name badly informed
 
 =1.2=
 *Products in the mark widget
 *Mark Description widget
 *Mark Logo widget
 *Product Name Widget
-
-== Next Steps ==
