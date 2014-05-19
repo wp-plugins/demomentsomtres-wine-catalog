@@ -3,7 +3,7 @@
   Plugin Name: DeMomentSomTres Catalog
   Plugin URI: http://demomentsomtres.com/catala
   Description: Shows your products in the web based on marks and product types. The shortcode [demomentsomtres-product-mark cols=n] shows all the products in the same mark than the current product. You also can include "echo dmst_catalog_shortcode($attr);" in your template to show the same contents.
-  Version: 1.4
+  Version: 1.4.1
   Author: Marc Queralt
   Author URI: http://demomentsomtres.com/
   License: GPLv2

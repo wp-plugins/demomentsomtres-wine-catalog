@@ -2,10 +2,9 @@
 Contributors: marcqueralt
 Tags: product portfolio, wines
 Requires at least: 3.2.1
-Tested up to: 3.5
+Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv2 or later
-Version: 1.3
 
 DeMomentSomTres Wine Catalog shows your product portfolio in the website.
 
@@ -23,6 +22,9 @@ Upload the plugin.
 N/A
 
 == Changelog ==
+= 1.4.1 =
+* 3.9.1 compatibility
+
 =1.4=
 * New field to inform sales URL
 * Widget to show sales URL
