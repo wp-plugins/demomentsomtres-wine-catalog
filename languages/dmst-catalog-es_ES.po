@@ -1,0 +1,248 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DeMomentSomTres Catalog v1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-02-19 11:16:39+0000\n"
+"Last-Translator: DeMomentSomTres <dms3@demomentsomtres.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: demomentsomtres-catalog.php:23
+#@ dmst-catalog
+msgctxt "taxonomy general name"
+msgid "Types"
+msgstr "Tipos"
+
+#: demomentsomtres-catalog.php:24
+#@ dmst-catalog
+msgctxt "taxonomy singular name"
+msgid "Type"
+msgstr "Tipo"
+
+#: demomentsomtres-catalog.php:25
+#@ dmst-catalog
+msgid "Search Type"
+msgstr "Buscar tipo"
+
+#: demomentsomtres-catalog.php:26
+#@ dmst-catalog
+msgid "All Types"
+msgstr "Todos los tipos"
+
+#: demomentsomtres-catalog.php:27
+#@ dmst-catalog
+msgid "Parent Type"
+msgstr "Tipo padre"
+
+#: demomentsomtres-catalog.php:28
+#@ dmst-catalog
+msgid "Parent Type:"
+msgstr "Tipo padre:"
+
+#: demomentsomtres-catalog.php:29
+#@ dmst-catalog
+msgid "Edit Type"
+msgstr "Editar tipo"
+
+#: demomentsomtres-catalog.php:30
+#@ dmst-catalog
+msgid "Update Type"
+msgstr "Actualizar tipo"
+
+#: demomentsomtres-catalog.php:31
+#@ dmst-catalog
+msgid "Add New Type"
+msgstr "Añadir tipo"
+
+#: demomentsomtres-catalog.php:32
+#@ dmst-catalog
+msgid "New Type Name"
+msgstr "Nombre del nuevo tipo"
+
+#: demomentsomtres-catalog.php:39
+#@ dmst-catalog
+msgctxt "taxonomy general name"
+msgid "Regions"
+msgstr "Regiones"
+
+#: demomentsomtres-catalog.php:40
+#@ dmst-catalog
+msgctxt "taxonomy singular name"
+msgid "Region"
+msgstr "Región"
+
+#: demomentsomtres-catalog.php:41
+#@ dmst-catalog
+msgid "Search Region"
+msgstr "Buscar región"
+
+#: demomentsomtres-catalog.php:42
+#@ dmst-catalog
+msgid "All Regions"
+msgstr "Todas las regiones"
+
+#: demomentsomtres-catalog.php:43
+#@ dmst-catalog
+msgid "Parent Region"
+msgstr "Región padre"
+
+#: demomentsomtres-catalog.php:44
+#@ dmst-catalog
+msgid "Parent Region:"
+msgstr "Región padre:"
+
+#: demomentsomtres-catalog.php:45
+#@ dmst-catalog
+msgid "Edit Region"
+msgstr "Editar región"
+
+#: demomentsomtres-catalog.php:46
+#@ dmst-catalog
+msgid "Update Region"
+msgstr "Actualizar región"
+
+#: demomentsomtres-catalog.php:47
+#@ dmst-catalog
+msgid "Add New Region"
+msgstr "Añadir región"
+
+#: demomentsomtres-catalog.php:48
+#@ dmst-catalog
+msgid "New Region Name"
+msgstr "Nombre de la nueva región"
+
+#: demomentsomtres-catalog.php:55
+#@ dmst-catalog
+msgctxt "taxonomy general name"
+msgid "Marks"
+msgstr "Marcas"
+
+#: demomentsomtres-catalog.php:56
+#@ dmst-catalog
+msgctxt "taxonomy singular name"
+msgid "Mark"
+msgstr "Marca"
+
+#: demomentsomtres-catalog.php:57
+#@ dmst-catalog
+msgid "Search Mark"
+msgstr "Buscar marca"
+
+#: demomentsomtres-catalog.php:58
+#@ dmst-catalog
+msgid "All Marks"
+msgstr "Todas las marcas"
+
+#: demomentsomtres-catalog.php:59
+#@ dmst-catalog
+msgid "Parent Mark"
+msgstr "Marca padre"
+
+#: demomentsomtres-catalog.php:60
+#@ dmst-catalog
+msgid "Parent Mark:"
+msgstr "Marca padre:"
+
+#: demomentsomtres-catalog.php:61
+#@ dmst-catalog
+msgid "Edit Mark"
+msgstr "Editar marca"
+
+#: demomentsomtres-catalog.php:62
+#@ dmst-catalog
+msgid "Update Mark"
+msgstr "Actualizar marca"
+
+#: demomentsomtres-catalog.php:63
+#@ dmst-catalog
+msgid "Add New Mark"
+msgstr "Añadir marca"
+
+#: demomentsomtres-catalog.php:72
+#@ dmst-catalog
+msgid "Products"
+msgstr "Productos"
+
+#: demomentsomtres-catalog.php:73
+#@ dmst-catalog
+msgid "Product"
+msgstr "Producto"
+
+#: demomentsomtres-catalog.php:75
+#@ dmst-catalog
+msgid "Add New Product"
+msgstr "Añadir producto"
+
+#: demomentsomtres-catalog.php:76
+#@ dmst-catalog
+msgid "Edit"
+msgstr "Editar"
+
+#: demomentsomtres-catalog.php:77
+#@ dmst-catalog
+msgid "Edit Product"
+msgstr "Editar producto"
+
+#: demomentsomtres-catalog.php:78
+#@ dmst-catalog
+msgid "New Product"
+msgstr "Nuevo producto"
+
+#: demomentsomtres-catalog.php:79
+#@ dmst-catalog
+msgid "View"
+msgstr "Ver"
+
+#: demomentsomtres-catalog.php:80
+#@ dmst-catalog
+msgid "View Product"
+msgstr "Ver producto"
+
+#: demomentsomtres-catalog.php:81
+#@ dmst-catalog
+msgid "Search Product"
+msgstr "Buscar producto"
+
+#: demomentsomtres-catalog.php:82
+#@ dmst-catalog
+msgid "No Product found"
+msgstr "No hay ningún producto"
+
+#: demomentsomtres-catalog.php:83
+#@ dmst-catalog
+msgid "No Product found in Trash"
+msgstr "No hay ningún producto en la papelera"
+
+#: demomentsomtres-catalog.php:84
+#@ dmst-catalog
+msgid "Parent Product"
+msgstr "Producto padre"
+
+#: demomentsomtres-catalog.php:156
+#@ dmst-catalog
+msgid "No image"
+msgstr "Sin imagen"
+
+#: demomentsomtres-catalog.php:64
+#@ dmst-catalog
+msgid "New Mark Name"
+msgstr "Nombre de la nueva marca"
+
+#: demomentsomtres-catalog.php:74
+#@ dmst-catalog
+msgid "Add Product"
+msgstr "Añadir producto"
+
