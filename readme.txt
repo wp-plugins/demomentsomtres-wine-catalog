@@ -21,11 +21,11 @@ You can get more information at [DeMomentSomTres Digital Marketing Agency](http:
 * Specific URL field to link to an external eCommerce site.
 * Shortcode demomentsomtres-marks to show all marks in a post or page. Just insert `[demomentsomtres-marks cols=n]` where you want to show your marks and logos.
 * Widgets: Many widgets have been added in order to show product related information. If showed in a single product they get information from the product. If not on a product, nothing is shown.
-** Mark Description Widget: shows the description inserted on the mark taxonomy.
-** Mark Logo Widget: shows the image linked to the mark taxonomy. 
-** Product Name Widget: shows the current product name in a H1 tag.
-** Product Sales URL: shows the external product URL if it is informed on the product.
-** Products In Category: shows other products in the same mark. Can be shown as a list of texts or as an image.
+* Mark Description Widget: shows the description inserted on the mark taxonomy.
+* Mark Logo Widget: shows the image linked to the mark taxonomy. 
+* Product Name Widget: shows the current product name in a H1 tag.
+* Product Sales URL: shows the external product URL if it is informed on the product.
+* Products In Category: shows other products in the same mark. Can be shown as a list of texts or as an image.
 * Translation Ready. Included Catalan language.
 
 **If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/).**
