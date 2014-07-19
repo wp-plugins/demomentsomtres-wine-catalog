@@ -10,18 +10,56 @@ DeMomentSomTres Wine Catalog shows your product portfolio in the website.
 
 == Description ==
 
-DeMomentSomTres Wine Catalog shows your product portfolio in the website. Specifically designed for wine cellars and wine shops.
+DeMomentSomTres Wine Catalog helps to easily incorporate your catalog of wines and champagnes your winery or wine shop on the web.
+
+You can get more information at [DeMomentSomTres Digital Marketing Agency](http://demomentsomtres.com/english/wordpress-plugins/demomentsomtres-wine-catalog/).
+
+= Features =
+
+* Specific post type product allowing to use all WordPress resources to present your product.
+* Classification based on mark, region and type.
+* Specific URL field to link to an external eCommerce site.
+* Shortcode demomentsomtres-marks to show all marks in a post or page. Just insert `[demomentsomtres-marks cols=n]` where you want to show your marks and logos.
+* Widgets: Many widgets have been added in order to show product related information. If showed in a single product they get information from the product. If not on a product, nothing is shown.
+** Mark Description Widget: shows the description inserted on the mark taxonomy.
+** Mark Logo Widget: shows the image linked to the mark taxonomy. 
+** Product Name Widget: shows the current product name in a H1 tag.
+** Product Sales URL: shows the external product URL if it is informed on the product.
+** Products In Category: shows other products in the same mark. Can be shown as a list of texts or as an image.
+* Translation Ready. Included Catalan language.
+
+**If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/).**
+
+We have used [Featured Image Widget](http://wordpress.org/plugins/featured-image-widget/) in some installs to show the featured product image in some installations.
+
+= History & Raison d’être =
+We were asked to build the winery website but it was a catalog and to achieve notoriety as the public and search engines.
+
+So we construct a solution of discard eCommerce pure Prestashop WooCommerce on because, well, we propose the design was very much in line of a printed catalog.
+
+For this reason we decided to build our own wine catalog component advantage of using external components like s8sideways to present the brand logo.
+
+So we decided to build a profile of wine or champagne on a custom post type wordpress creating classifications (taxonomies) specific to group brands.
+
+Widgets there were added according to the specific needs of the construction site to present brands in their own navigation brand, navigation to other brands ...
+
+Then we had to incorporate some products link to the website where you can buy this wine and this was the origin of Product Sales URL widget.
 
 == Installation ==
 
-Upload the plugin.
+This plugin doesn't have any specific installation requirements.
 
+If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/)
 
 == Screenshots ==
 
-N/A
+1. The widgets marked on a product page from Castell d'Or winery.
+2. Shortcode result in Castell d'Or winery's homepage.
 
 == Changelog ==
+= 1.4.2 =
+* Improved documentation
+
 = 1.4.1 =
 * 3.9.1 compatibility
 
