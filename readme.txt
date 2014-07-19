@@ -33,7 +33,7 @@ You can get more information at [DeMomentSomTres Digital Marketing Agency](http:
 We have used [Featured Image Widget](http://wordpress.org/plugins/featured-image-widget/) in some installs to show the featured product image in some installations.
 
 = History & Raison d’être =
-We were asked to build the winery website but it was a catalog and to achieve notoriety as the public and search engines.
+We were asked to build the [Castell d'Or winery's](http://www.castelldor.com/) website but it was a catalog and to achieve notoriety as the public and search engines.
 
 So we construct a solution of discard eCommerce pure Prestashop WooCommerce on because, well, we propose the design was very much in line of a printed catalog.
 
@@ -55,6 +55,13 @@ If you want to use mark images you need to install [Sideways8 Simple Taxonomy Im
 
 1. The widgets marked on a product page from Castell d'Or winery.
 2. Shortcode result in Castell d'Or winery's homepage.
+
+== Frequent Asked Questions ==
+=== What's the right syntax of the shortcode? ===
+The right syntax is `[demomentsomtres-marks cols="n"]`.
+
+=== Why I cannot se mark images? ===
+If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/)
 
 == Changelog ==
 = 1.4.2 =
