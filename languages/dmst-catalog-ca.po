@@ -1,0 +1,960 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DeMomentSomTres Catalog v1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Jun 10 2015 15:45:39 GMT+0200 (CEST)\n"
+"PO-Revision-Date: Wed Jun 10 2015 19:02:35 GMT+0200 (CEST)\n"
+"Last-Translator: dms3 <dms3@demomentsomtres.com>\n"
+"Language-Team: \n"
+"Language: Catalan\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: ca_ES"
+
+#: ../demomentsomtres-catalog-widgets.php:14 ../demomentsomtres-catalog-widgets.
+#: php:185
+msgid "Title:"
+msgstr "Títol:"
+
+#: ../demomentsomtres-catalog-widgets.php:15
+msgid "Mode"
+msgstr "Mode"
+
+#: ../demomentsomtres-catalog-widgets.php:16
+msgid "Text"
+msgstr "Text"
+
+#: ../demomentsomtres-catalog-widgets.php:17
+msgid "Image"
+msgstr "Imatge"
+
+#: ../demomentsomtres-catalog-widgets.php:186
+msgid "URL Label:"
+msgstr "Etiqueta URL:"
+
+#: ../demomentsomtres-catalog.php:174
+msgid "Some plugins are missing!"
+msgstr "Falten algunes extensions"
+
+#: ../demomentsomtres-catalog.php:176
+msgid "This are the required plugins"
+msgstr "Aquestes són les extensions requerides"
+
+#: ../demomentsomtres-catalog.php:178 ../lib/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr "Instal·lar les extensions requerides"
+
+#: ../demomentsomtres-catalog.php:179 ../lib/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr "Instal·lar extensions"
+
+#: ../demomentsomtres-catalog.php:180 ../lib/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instal·lant l'extensió: %s"
+
+#: ../demomentsomtres-catalog.php:181
+msgid "Something went wrong with the plugin API."
+msgstr "Hi ha hagut un error amb l'API de les extensions"
+
+#: ../demomentsomtres-catalog.php:182 ../lib/class-tgm-plugin-activation.php:165
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Aquesta extensió necessita l'extensió %1$s"
+msgstr[1] "Aquesta extensió necessita les extensions següents: %1$s"
+
+#: ../demomentsomtres-catalog.php:183 ../lib/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Per aquesta extensió és recomanable l'extensió %1$s"
+msgstr[1] "Aquesta extensió recomana les extensions %1$s"
+
+#: ../demomentsomtres-catalog.php:184 ../lib/class-tgm-plugin-activation.php:167
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s plugins."
+" Contact the administrator of this site for help on getting the plugins "
+"installed."
+msgstr[0] "No tens permisos suficients per instal·lar l'extensió %s."
+msgstr[1] "No tens permisos suficients per instal·lar les extensions %s"
+
+#: ../demomentsomtres-catalog.php:185 ../lib/class-tgm-plugin-activation.php:168
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "L'extensió %1$s és necessària i es troba inactiva."
+msgstr[1] "Les extensions %1$s que són necessàries es troben inactives."
+
+#: ../demomentsomtres-catalog.php:186 ../lib/class-tgm-plugin-activation.php:169
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "L'extensió recomanada %1$s es troba inactiva."
+msgstr[1] "Les extensions recomandes %1$s es troben inactives."
+
+#: ../demomentsomtres-catalog.php:187 ../lib/class-tgm-plugin-activation.php:170
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s plugin."
+" Contact the administrator of this site for help on getting the plugin "
+"activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] "No tens permisos suficients per activar l'extensió %1$s."
+msgstr[1] "No tens permisos suficients per activar les extensions %1$s."
+
+#: ../demomentsomtres-catalog.php:188 ../lib/class-tgm-plugin-activation.php:171
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] "Cal actualitzar l'extensió %1$s per assegurar la compatibilitat."
+msgstr[1] "Cal actualitzar les extensions %1$s per assegurar la compatibilitat."
+
+#: ../demomentsomtres-catalog.php:189 ../lib/class-tgm-plugin-activation.php:172
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] "No tens permisos suficients per actualitzar l'extensió %s."
+msgstr[1] "No tens permisos suficients per actualitzar les extensions %s."
+
+#: ../demomentsomtres-catalog.php:190 ../lib/class-tgm-plugin-activation.php:173
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Instal·lant l'extensió"
+msgstr[1] "Instal·lant les extensions"
+
+#: ../demomentsomtres-catalog.php:191 ../lib/class-tgm-plugin-activation.php:174
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Activa l'extensió"
+msgstr[1] "Activa les extensions"
+
+#: ../demomentsomtres-catalog.php:192 ../lib/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr "Tornar a l'instal·lador d'extensions necessàries"
+
+#: ../demomentsomtres-catalog.php:193 ../lib/class-tgm-plugin-activation.php:177 .
+#: ./lib/class-tgm-plugin-activation.php:1956
+msgid "Plugin activated successfully."
+msgstr "Extensió activada."
+
+#: ../demomentsomtres-catalog.php:194
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Totes les extensions s'han activat. %s"
+
+#: ../demomentsomtres-catalog.php:203
+msgctxt "taxonomy general name"
+msgid "Product Types"
+msgstr "Tipus de producte"
+
+#: ../demomentsomtres-catalog.php:204
+msgctxt "taxonomy singular name"
+msgid "Product Type"
+msgstr "Tipus de producte"
+
+#: ../demomentsomtres-catalog.php:205
+msgid "Search Type"
+msgstr "Buscar tipus"
+
+#: ../demomentsomtres-catalog.php:206
+msgid "All Product Types"
+msgstr "Tots els tipus de producte"
+
+#: ../demomentsomtres-catalog.php:207
+msgid "Parent Product Type"
+msgstr "Tipus de producte pare"
+
+#: ../demomentsomtres-catalog.php:208
+msgid "Parent Product Type:"
+msgstr "Tipus de producte pare:"
+
+#: ../demomentsomtres-catalog.php:209
+msgid "Edit Product Type"
+msgstr "Editar tipus de producte"
+
+#: ../demomentsomtres-catalog.php:210
+msgid "Update Product Type"
+msgstr "Actualitzar tipus de producte"
+
+#: ../demomentsomtres-catalog.php:211
+msgid "Add New Product Type"
+msgstr "Afegir tipus de producte"
+
+#: ../demomentsomtres-catalog.php:212
+msgid "New Product Type Name"
+msgstr "Nom del nou tipus de producte"
+
+#: ../demomentsomtres-catalog.php:220
+msgctxt "taxonomy general name"
+msgid "Regions"
+msgstr "Regions"
+
+#: ../demomentsomtres-catalog.php:221
+msgctxt "taxonomy singular name"
+msgid "Region"
+msgstr "Regió"
+
+#: ../demomentsomtres-catalog.php:222
+msgid "Search Region"
+msgstr "Buscar regió"
+
+#: ../demomentsomtres-catalog.php:223
+msgid "All Regions"
+msgstr "Totes les regions"
+
+#: ../demomentsomtres-catalog.php:224
+msgid "Parent Region"
+msgstr "Regió pare"
+
+#: ../demomentsomtres-catalog.php:225
+msgid "Parent Region:"
+msgstr "Regió pare:"
+
+#: ../demomentsomtres-catalog.php:226
+msgid "Edit Region"
+msgstr "Editar revió"
+
+#: ../demomentsomtres-catalog.php:227
+msgid "Update Region"
+msgstr "Actualitzar regió"
+
+#: ../demomentsomtres-catalog.php:228
+msgid "Add New Region"
+msgstr "Afegir regió\n"
+
+#: ../demomentsomtres-catalog.php:229
+msgid "New Region Name"
+msgstr "Nom de la nova regió"
+
+#: ../demomentsomtres-catalog.php:237
+msgctxt "taxonomy general name"
+msgid "Producers"
+msgstr "Productors"
+
+#: ../demomentsomtres-catalog.php:238
+msgctxt "taxonomy singular name"
+msgid "Producer"
+msgstr "Productor"
+
+#: ../demomentsomtres-catalog.php:239
+msgid "Search Producer"
+msgstr "Cercar productor"
+
+#: ../demomentsomtres-catalog.php:240
+msgid "All Producers"
+msgstr "Tots els productors"
+
+#: ../demomentsomtres-catalog.php:241
+msgid "Parent Producer"
+msgstr "Productor pare"
+
+#: ../demomentsomtres-catalog.php:242
+msgid "Parent Producer:"
+msgstr "Productor pare:"
+
+#: ../demomentsomtres-catalog.php:243
+msgid "Edit Producer"
+msgstr "Editar productor"
+
+#: ../demomentsomtres-catalog.php:244
+msgid "Update Producer"
+msgstr "Actualitzar productor"
+
+#: ../demomentsomtres-catalog.php:245
+msgid "Add New Producer"
+msgstr "Afegir productor"
+
+#: ../demomentsomtres-catalog.php:246
+msgid "New Producer Name"
+msgstr "Nom del nou productor"
+
+#: ../demomentsomtres-catalog.php:254
+msgctxt "Taxonomy General Name"
+msgid "Milk origins"
+msgstr "Orígens de la llet"
+
+#: ../demomentsomtres-catalog.php:255
+msgctxt "Taxonomy Singular Name"
+msgid "Milk origin"
+msgstr "Origen de la llet"
+
+#: ../demomentsomtres-catalog.php:256
+msgid "Milk origins"
+msgstr "Orígens de la llet"
+
+#: ../demomentsomtres-catalog.php:257
+msgid "All Milk Origins"
+msgstr "Tots els orígens de llet"
+
+#: ../demomentsomtres-catalog.php:258
+msgid "Parent Origin"
+msgstr "Origen pare"
+
+#: ../demomentsomtres-catalog.php:259
+msgid "Parent Origin:"
+msgstr "Origen pare:"
+
+#: ../demomentsomtres-catalog.php:260
+msgid "New Milk Origin"
+msgstr "Nou origen de la llet"
+
+#: ../demomentsomtres-catalog.php:261
+msgid "Add New Milk Origin"
+msgstr "Afegir origen de la llet"
+
+#: ../demomentsomtres-catalog.php:262
+msgid "Edit Milk Origin"
+msgstr "Editar origen de la llet"
+
+#: ../demomentsomtres-catalog.php:263
+msgid "Update Milk Origin"
+msgstr "Actualitzar origen de la llet"
+
+#: ../demomentsomtres-catalog.php:264
+msgid "View Milk Origin"
+msgstr "Veure origen de la llet"
+
+#: ../demomentsomtres-catalog.php:265 ../demomentsomtres-catalog.php:295 ..
+#: /demomentsomtres-catalog.php:325 ../demomentsomtres-catalog.php:355 ..
+#: /demomentsomtres-catalog.php:385
+msgid "Separate items with commas"
+msgstr "Separar elements amb comes"
+
+#: ../demomentsomtres-catalog.php:266 ../demomentsomtres-catalog.php:296 ..
+#: /demomentsomtres-catalog.php:326 ../demomentsomtres-catalog.php:356 ..
+#: /demomentsomtres-catalog.php:386
+msgid "Add or remove items"
+msgstr "Afegir o eliminar elements"
+
+#: ../demomentsomtres-catalog.php:267 ../demomentsomtres-catalog.php:297 ..
+#: /demomentsomtres-catalog.php:327 ../demomentsomtres-catalog.php:357 ..
+#: /demomentsomtres-catalog.php:387
+msgid "Choose from the most used"
+msgstr "Escollir entre les mes usades"
+
+#: ../demomentsomtres-catalog.php:268
+msgid "Popular Milk Origins"
+msgstr "Orígens de la llet populars"
+
+#: ../demomentsomtres-catalog.php:269
+msgid "Search Milk Origins"
+msgstr "Cercar orígens de la llet"
+
+#: ../demomentsomtres-catalog.php:270 ../demomentsomtres-catalog.php:300 ..
+#: /demomentsomtres-catalog.php:330 ../demomentsomtres-catalog.php:360 ..
+#: /demomentsomtres-catalog.php:390
+msgid "Not Found"
+msgstr "No trobat"
+
+#: ../demomentsomtres-catalog.php:284
+msgctxt "Taxonomy General Name"
+msgid "Milk Types"
+msgstr "Tipus de llet"
+
+#: ../demomentsomtres-catalog.php:285
+msgctxt "Taxonomy Singular Name"
+msgid "Milk Yype"
+msgstr "Tipus de llet"
+
+#: ../demomentsomtres-catalog.php:286
+msgid "Milk Types"
+msgstr "Tipus de llet"
+
+#: ../demomentsomtres-catalog.php:287
+msgid "All Milk Types"
+msgstr "Tots els tipus de llet"
+
+#: ../demomentsomtres-catalog.php:288
+msgid "Parent Type"
+msgstr "Tipus pare"
+
+#: ../demomentsomtres-catalog.php:289 ../demomentsomtres-catalog.php:349
+msgid "Parent Type:"
+msgstr "Tipus pare:"
+
+#: ../demomentsomtres-catalog.php:290
+msgid "New Milk Type"
+msgstr "Nou tipus de llet"
+
+#: ../demomentsomtres-catalog.php:291
+msgid "Add New Milk Type"
+msgstr "Afegir tipus de llet"
+
+#: ../demomentsomtres-catalog.php:292
+msgid "Edit Milk Type"
+msgstr "Editar tipus de llet"
+
+#: ../demomentsomtres-catalog.php:293
+msgid "Update Milk Type"
+msgstr "Actualitzar tipus de llet"
+
+#: ../demomentsomtres-catalog.php:294
+msgid "View Milk Type"
+msgstr "Veure tipus de llet"
+
+#: ../demomentsomtres-catalog.php:298
+msgid "Popular Milk Types"
+msgstr "Tipus de llet populars"
+
+#: ../demomentsomtres-catalog.php:299
+msgid "Search Milk Types"
+msgstr "Cercar tipus de llet"
+
+#: ../demomentsomtres-catalog.php:314
+msgctxt "Taxonomy General Name"
+msgid "Cheese Textures"
+msgstr "Pastes del formatge"
+
+#: ../demomentsomtres-catalog.php:315
+msgctxt "Taxonomy Singular Name"
+msgid "Cheese Texture"
+msgstr "Pasta del formatge"
+
+#: ../demomentsomtres-catalog.php:316
+msgid "Cheese Textures"
+msgstr "Pasta del formatge"
+
+#: ../demomentsomtres-catalog.php:317
+msgid "All Cheese Textures"
+msgstr "Tots els tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:318
+msgid "Parent Cheese Texture"
+msgstr "Pastes del formatge"
+
+#: ../demomentsomtres-catalog.php:319
+msgid "Parent Texture:"
+msgstr "Tipus de pasta pare:"
+
+#: ../demomentsomtres-catalog.php:320
+msgid "New Cheese Texture"
+msgstr "Nou tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:321
+msgid "Add New Cheese Texture"
+msgstr "Afegir tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:322
+msgid "Edit Cheese Texture"
+msgstr "Editar tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:323
+msgid "Update Cheese Texture"
+msgstr "Actualitzar tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:324
+msgid "View Cheese Texture"
+msgstr "Veure tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:328
+msgid "Popular Cheese Textures"
+msgstr "Tipus de pasta populars"
+
+#: ../demomentsomtres-catalog.php:329
+msgid "Search Cheese Textures"
+msgstr "Cercar tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:344
+msgctxt "Taxonomy General Name"
+msgid "Wine Types"
+msgstr "Tipus de vi"
+
+#: ../demomentsomtres-catalog.php:345
+msgctxt "Taxonomy Singular Name"
+msgid "Wine Type"
+msgstr "Tipus de vi"
+
+#: ../demomentsomtres-catalog.php:346 ../demomentsomtres-catalog.php:534
+msgid "Wine Types"
+msgstr "Tipus de vi"
+
+#: ../demomentsomtres-catalog.php:347
+msgid "All Wine Types"
+msgstr "Tots els tipus de vi"
+
+#: ../demomentsomtres-catalog.php:348
+msgid "Parent Wine Type"
+msgstr "Tipus de vi pare"
+
+#: ../demomentsomtres-catalog.php:350
+msgid "New Wine Type"
+msgstr "Nou tipus de vi"
+
+#: ../demomentsomtres-catalog.php:351
+msgid "Add New Wine Type"
+msgstr "Afegir tipus de vi"
+
+#: ../demomentsomtres-catalog.php:352
+msgid "Edit Wine Type"
+msgstr "Editar tipus de vi"
+
+#: ../demomentsomtres-catalog.php:353
+msgid "Update Wine Type"
+msgstr "Actualitzar tipus de vi"
+
+#: ../demomentsomtres-catalog.php:354
+msgid "View Wine Type"
+msgstr "Veure tipus de vi"
+
+#: ../demomentsomtres-catalog.php:358
+msgid "Popular Wine Types"
+msgstr "Tipus de vi populars"
+
+#: ../demomentsomtres-catalog.php:359
+msgid "Search Wine Types"
+msgstr "Cercar tipus de vi"
+
+#: ../demomentsomtres-catalog.php:374
+msgctxt "Taxonomy General Name"
+msgid "Allergens"
+msgstr "Al·lergògens"
+
+#: ../demomentsomtres-catalog.php:375
+msgctxt "Taxonomy Singular Name"
+msgid "Allergen"
+msgstr "Alergogen"
+
+#: ../demomentsomtres-catalog.php:376
+msgid "Allergens"
+msgstr "Al·lergògens"
+
+#: ../demomentsomtres-catalog.php:377
+msgid "All Allergens"
+msgstr "Tots els al·lergògens"
+
+#: ../demomentsomtres-catalog.php:378
+msgid "Parent Allergen"
+msgstr "Al·lergogen pare"
+
+#: ../demomentsomtres-catalog.php:379
+msgid "Parent Allergen:"
+msgstr "Al·lergogen pare:"
+
+#: ../demomentsomtres-catalog.php:380
+msgid "New Allergen"
+msgstr "Nou al·lergogen"
+
+#: ../demomentsomtres-catalog.php:381
+msgid "Add New Allergen"
+msgstr "Afegir al·lergogen"
+
+#: ../demomentsomtres-catalog.php:382
+msgid "Edit Allergen"
+msgstr "Editar al·lergogen"
+
+#: ../demomentsomtres-catalog.php:383
+msgid "Update Allergen"
+msgstr "Actualitzar al·lergogen"
+
+#: ../demomentsomtres-catalog.php:384
+msgid "View Allergen"
+msgstr "Veure al·lergogen"
+
+#: ../demomentsomtres-catalog.php:388
+msgid "Popular Allergens"
+msgstr "Al·lergògens populars"
+
+#: ../demomentsomtres-catalog.php:389
+msgid "Search Allergens"
+msgstr "Cercar al·lergògens"
+
+#: ../demomentsomtres-catalog.php:405
+msgid "Products"
+msgstr "Productes"
+
+#: ../demomentsomtres-catalog.php:406 ../demomentsomtres-catalog.php:710
+msgid "Product"
+msgstr "Producte"
+
+#: ../demomentsomtres-catalog.php:407
+msgid "Add Product"
+msgstr "Afegir producte"
+
+#: ../demomentsomtres-catalog.php:408
+msgid "Add New Product"
+msgstr "Afegir producte"
+
+#: ../demomentsomtres-catalog.php:409
+msgid "Edit"
+msgstr "Editar"
+
+#: ../demomentsomtres-catalog.php:410
+msgid "Edit Product"
+msgstr "Editar producte"
+
+#: ../demomentsomtres-catalog.php:411
+msgid "New Product"
+msgstr "Nou producte"
+
+#: ../demomentsomtres-catalog.php:412
+msgid "View"
+msgstr "Veure"
+
+#: ../demomentsomtres-catalog.php:413
+msgid "View Product"
+msgstr "Veure producte"
+
+#: ../demomentsomtres-catalog.php:414
+msgid "Search Product"
+msgstr "Cercar producte"
+
+#: ../demomentsomtres-catalog.php:415
+msgid "No Product found"
+msgstr "No s'ha trobat cap producte"
+
+#: ../demomentsomtres-catalog.php:416
+msgid "No Product found in Trash"
+msgstr "No hi ha cap producte a la paperera"
+
+#: ../demomentsomtres-catalog.php:417
+msgid "Parent Product"
+msgstr "Producte pare"
+
+#: ../demomentsomtres-catalog.php:454
+msgid "Product Common Information"
+msgstr "Informació comuna de producte"
+
+#: ../demomentsomtres-catalog.php:460
+msgid "Product Type"
+msgstr "Tipus de producte"
+
+#: ../demomentsomtres-catalog.php:465
+msgid "Select a product type"
+msgstr "Escull un tipus de producte"
+
+#: ../demomentsomtres-catalog.php:475
+msgid "Featured Image"
+msgstr "Imatge destacada"
+
+#: ../demomentsomtres-catalog.php:481
+msgid "Region"
+msgstr "Regió, territori o Denominació d'Origen"
+
+#: ../demomentsomtres-catalog.php:484
+msgid "Select a region"
+msgstr "Escull un territori"
+
+#: ../demomentsomtres-catalog.php:496
+msgid "Producer"
+msgstr "Productor"
+
+#: ../demomentsomtres-catalog.php:501
+msgid "Select the producer"
+msgstr "Escull el productor"
+
+#: ../demomentsomtres-catalog.php:511
+msgid "Allergens information"
+msgstr "Informació sobre al·lergògens"
+
+#: ../demomentsomtres-catalog.php:516
+msgid "Select the needed Allergen Information"
+msgstr "Escull els al·lergògens necessaris"
+
+#: ../demomentsomtres-catalog.php:529
+msgid "Wine Specific Information"
+msgstr "Informació específica per a vi"
+
+#: ../demomentsomtres-catalog.php:538
+msgid "Select the needed Wine Types"
+msgstr "Escull els tipus de vins necessaris"
+
+#: ../demomentsomtres-catalog.php:551
+msgid "Cheese Specific Information"
+msgstr "Informació específica de formatge"
+
+#: ../demomentsomtres-catalog.php:557
+msgid "Milk Origin"
+msgstr "Origen de la llet"
+
+#: ../demomentsomtres-catalog.php:562
+msgid "Select the animals whose milk this cheese is made"
+msgstr "Escull els animals que han proporcionat la llet per a fer el formatge"
+
+#: ../demomentsomtres-catalog.php:572
+msgid "Milk Type"
+msgstr "Tipus de llet"
+
+#: ../demomentsomtres-catalog.php:576
+msgid "Select the milk characteristics"
+msgstr "Escull les característiques de la llet"
+
+#: ../demomentsomtres-catalog.php:587
+msgid "Cheese Texture"
+msgstr "Tipus de pasta"
+
+#: ../demomentsomtres-catalog.php:592
+msgid "Select Textures of this cheese"
+msgstr "Escull els tipus de pasta del formatge"
+
+#: ../demomentsomtres-catalog.php:605
+msgid "Product Shopping Information"
+msgstr "Informació de compra del producte"
+
+#: ../demomentsomtres-catalog.php:610
+msgid "Shopping URL"
+msgstr "URL del producte a una botiga online"
+
+#: ../demomentsomtres-catalog.php:618 ../demomentsomtres-catalog.php:626 ..
+#: /demomentsomtres-catalog.php:708
+msgid "Related Products"
+msgstr "Productes relacionats"
+
+#: ../demomentsomtres-catalog.php:633
+msgid "Select an Item"
+msgstr "Escull un element"
+
+#: ../demomentsomtres-catalog.php:670
+msgid "Clic to toggle"
+msgstr "Fes clic per obrir i tancar"
+
+#: ../demomentsomtres-catalog.php:671
+msgid "Product slogan"
+msgstr "Crida del producte"
+
+#: ../demomentsomtres-catalog.php:683
+msgid "Related Posts (and events)"
+msgstr "Entrades (i esdeveniments) relacionats"
+
+#: ../demomentsomtres-catalog.php:694
+msgid "If the post is not saved, information cannot be displayed"
+msgstr "Fins que el producte no estigui gravat no es podrà mostrar aquesta informació"
+
+#: ../demomentsomtres-catalog.php:699
+msgid "Related Posts"
+msgstr "Continguts relacionats"
+
+#: ../demomentsomtres-catalog.php:701
+msgid "Post Title"
+msgstr "Títol del contingut"
+
+#: ../demomentsomtres-catalog.php:701
+msgid "Post Type"
+msgstr "Tipus de contigut"
+
+#: ../demomentsomtres-catalog.php:701 ../demomentsomtres-catalog.php:710
+msgid "Actions"
+msgstr "Accions"
+
+#: ../demomentsomtres-catalog.php:703 ../demomentsomtres-catalog.php:712
+msgid "Open in a new window"
+msgstr "Obrir en una finestra nova"
+
+#: ../lib/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr "Hi ha hagut un error."
+
+#: ../lib/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr "Tornar al tauler"
+
+#: ../lib/class-tgm-plugin-activation.php:178 ../lib/class-tgm-plugin-activation.
+#: php:1644
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "S'ha activat:"
+msgstr[1] "S'ha activat:"
+
+#: ../lib/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Totes les extensions han estat activades i instal·lades. %1$s"
+
+#: ../lib/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr "Ignora el missatge"
+
+#: ../lib/class-tgm-plugin-activation.php:532 ../lib/class-tgm-plugin-activation.
+#: php:532 ../lib/class-tgm-plugin-activation.php:2173 ../lib/class-tgm-plugin-
+#: activation.php:2173
+msgid "Return to the Dashboard"
+msgstr "Tornar al tauler"
+
+#: ../lib/class-tgm-plugin-activation.php:1167 ../lib/class-tgm-plugin-activation.
+#: php:1348
+msgid "Private Repository"
+msgstr "Repositori privat"
+
+#: ../lib/class-tgm-plugin-activation.php:1170 ../lib/class-tgm-plugin-activation.
+#: php:1351
+msgid "Pre-Packaged"
+msgstr "Inclòs amb aquesta extensió"
+
+#: ../lib/class-tgm-plugin-activation.php:1175
+msgid "WordPress Repository"
+msgstr "Extensions de WordPress"
+
+#: ../lib/class-tgm-plugin-activation.php:1178
+msgid "Required"
+msgstr "Imprescindible"
+
+#: ../lib/class-tgm-plugin-activation.php:1178
+msgid "Recommended"
+msgstr "Recomanable"
+
+#: ../lib/class-tgm-plugin-activation.php:1181
+msgid "Not Installed"
+msgstr "No instal·lada"
+
+#: ../lib/class-tgm-plugin-activation.php:1183
+msgid "Installed But Not Activated"
+msgstr "Instal·lada però no activa"
+
+#: ../lib/class-tgm-plugin-activation.php:1288 ../lib/class-tgm-plugin-activation.
+#: php:1288 ../lib/class-tgm-plugin-activation.php:1409
+msgid "Install"
+msgstr "Instal·la"
+
+#: ../lib/class-tgm-plugin-activation.php:1312 ../lib/class-tgm-plugin-activation.
+#: php:1312 ../lib/class-tgm-plugin-activation.php:1410
+msgid "Activate"
+msgstr "Activa"
+
+#: ../lib/class-tgm-plugin-activation.php:1372
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"No hi ha cap extensió pendent d'instal·lar o activar. <a href=\"%1$s\" "
+"title=\"Torna al tauler\">Torna al tauler</a>"
+
+#: ../lib/class-tgm-plugin-activation.php:1388
+msgid "Plugin"
+msgstr "Extensió"
+
+#: ../lib/class-tgm-plugin-activation.php:1389
+msgid "Source"
+msgstr "Font"
+
+#: ../lib/class-tgm-plugin-activation.php:1390
+msgid "Type"
+msgstr "Tipus"
+
+#: ../lib/class-tgm-plugin-activation.php:1391
+msgid "Status"
+msgstr "Estat"
+
+#: ../lib/class-tgm-plugin-activation.php:1939
+msgid "Install package not available."
+msgstr "Paquet d'instal·lació no disponible"
+
+#: ../lib/class-tgm-plugin-activation.php:1940
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Descarregant el paquet d'instal·lació des de <span "
+"class=\"code\">%s</span>&#8230;"
+
+#: ../lib/class-tgm-plugin-activation.php:1941
+msgid "Unpacking the package&#8230;"
+msgstr "Desempaquetant el paquet&#8230;"
+
+#: ../lib/class-tgm-plugin-activation.php:1942
+msgid "Installing the plugin&#8230;"
+msgstr "Instal·lant l'extensió&#8230;"
+
+#: ../lib/class-tgm-plugin-activation.php:1943
+msgid "Plugin install failed."
+msgstr "Ha fallat la instal·lació."
+
+#: ../lib/class-tgm-plugin-activation.php:1944
+msgid "Plugin installed successfully."
+msgstr "Extensió instal·lada."
+
+#: ../lib/class-tgm-plugin-activation.php:1955
+msgid "Plugin activation failed."
+msgstr "Ha fallat l'activació."
+
+#: ../lib/class-tgm-plugin-activation.php:2069
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"El procés d'instal·lació i activació acaba de començar. Aquest procés pot "
+"durar una estona en determinats servidors, sigues pacient."
+
+#: ../lib/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s instal·lada i activada."
+
+#: ../lib/class-tgm-plugin-activation.php:2070 ../lib/class-tgm-plugin-activation.
+#: php:2079
+msgid "Show Details"
+msgstr "Mostra detalls"
+
+#: ../lib/class-tgm-plugin-activation.php:2070 ../lib/class-tgm-plugin-activation.
+#: php:2079
+msgid "Hide Details"
+msgstr "Amaga detalls"
+
+#: ../lib/class-tgm-plugin-activation.php:2071
+msgid "All installations and activations have been completed."
+msgstr "Totes les instal·lacions i activacions s'han completat."
+
+#: ../lib/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instal·lant i activant l'extensió %1$s (%2$d/%3$d)"
+
+#: ../lib/class-tgm-plugin-activation.php:2076
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"El procés d'instal·lació acaba de començar. Aquest procés pot durar una "
+"estona en determinats servidors, sigues pacient."
+
+#: ../lib/class-tgm-plugin-activation.php:2077
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Error durant la instal·lació de %1$s: <strong>%2$s</strong>"
+
+#: ../lib/class-tgm-plugin-activation.php:2078
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "La instal·lació de %1$s ha fallat."
+
+#: ../lib/class-tgm-plugin-activation.php:2079
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s instal·lada."
+
+#: ../lib/class-tgm-plugin-activation.php:2080
+msgid "All installations have been completed."
+msgstr "Totes les instal·lacions han completat."
+
+#: ../lib/class-tgm-plugin-activation.php:2081
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instal·lant l'extensió %1$s (%2$d/%3$d)"
