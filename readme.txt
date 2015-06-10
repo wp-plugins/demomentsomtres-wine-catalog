@@ -1,21 +1,22 @@
-=== DeMomentSomTres Wine Catalog ===
+=== DeMomentSomTres Wine and Cheese Catalog ===
 Contributors: marcqueralt
-Tags: product portfolio, wines
+Tags: product portfolio, wines, cheese
 Requires at least: 3.2.1
 Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv2 or later
 
-DeMomentSomTres Wine Catalog shows your product portfolio in the website.
+DeMomentSomTres Wine and Cheese Catalog shows your product portfolio in the website.
 
 == Description ==
 
-DeMomentSomTres Wine Catalog helps to easily incorporate your catalog of wines and champagnes your winery or wine shop on the web.
+DeMomentSomTres Wine and Cheese Catalog helps to easily incorporate your catalog of wines and champagnes your winery or wine shop on the web.
 
 You can get more information at [DeMomentSomTres Digital Marketing Agency](http://demomentsomtres.com/english/wordpress-plugins/demomentsomtres-wine-catalog/).
 
 = Features =
 
+* Required plugins management
 * Specific post type product allowing to use all WordPress resources to present your product.
 * Classification based on mark, region and type.
 * Specific URL field to link to an external eCommerce site.
@@ -27,8 +28,7 @@ You can get more information at [DeMomentSomTres Digital Marketing Agency](http:
 * Product Sales URL: shows the external product URL if it is informed on the product.
 * Products In Category: shows other products in the same mark. Can be shown as a list of texts or as an image.
 * Translation Ready. Included Catalan language.
-
-**If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/).**
+* Taxonomy Images 
 
 We have used [Featured Image Widget](http://wordpress.org/plugins/featured-image-widget/) in some installs to show the featured product image in some installations.
 
@@ -47,9 +47,7 @@ Then we had to incorporate some products link to the website where you can buy t
 
 == Installation ==
 
-This plugin doesn't have any specific installation requirements.
-
-If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/)
+This plugin can be installed on any WordPress. It detects if any required plugin is not installed and manages the situation.
 
 == Screenshots ==
 
@@ -60,10 +58,17 @@ If you want to use mark images you need to install [Sideways8 Simple Taxonomy Im
 === What's the right syntax of the shortcode? ===
 The right syntax is `[demomentsomtres-marks cols="n"]`.
 
-=== Why I cannot se mark images? ===
-If you want to use mark images you need to install [Sideways8 Simple Taxonomy Images](https://wordpress.org/plugins/s8-simple-taxonomy-images/)
+=== I was using Sideways Simple Taxonomy Images what happens to my installation ===
+If you where using this plugin, nothing happens. Old marks are compatible. However, new ones are only compatible with Categories Images plugin.
 
 == Changelog ==
+= 2.0 =
+* Classe based development
+* Additional shortcodes
+* Categories Images integration
+* Related posts and events
+* Cheese specific requirements
+
 = 1.4.2 =
 * Improved documentation
 
