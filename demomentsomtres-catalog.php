@@ -134,6 +134,14 @@
                 $this,
                 'shortcode_product_name'
             ));
+            add_shortcode('dms3-catalog-product-related-posts', array(
+                $this,
+                'shortcode_product_related_posts'
+            ));
+            add_shortcode('dms3-catalog-product-related-products', array(
+                $this,
+                'shortcode_product_related_products'
+            ));
 
             add_image_size(self::IMAGESIZENAME, self::PARAMETER_IMAGEWIDTH, self::PARAMETER_IMAGEHEIGHT, false);
         }
@@ -418,7 +426,7 @@
                 ),
                 'public' => true,
                 'show_in_nav_menus' => true,
-                'menu_position' => 26,
+                // 'menu_position' => 25,
                 'menu_icon' => 'dashicons-products',
                 'taxonomies' => array(
                     self::TAX_PRODUCTTYPE,
@@ -430,6 +438,7 @@
                     self::TAX_WINE_TYPE,
                     self::TAX_ALLERGENS_INFO,
                 ),
+                'capability_type'=>'page',
                 'rewrite' => array('slug' => 'product-catalog'),
                 'query_var' => true,
                 'has_archive' => true,
@@ -438,12 +447,12 @@
                     'editor',
                     'excerpt',
                     'trackbacks',
-                    'custom-fields',
+                    // 'custom-fields',
                     'comments',
                     'revisions',
                     'thumbnail',
                     'author',
-                    'page-attributes'
+                    // 'page-attributes'
                 )
             ));
         }
@@ -910,12 +919,16 @@
                 'post_id' => $post -> ID,
                 'cols' => 4,
                 'size' => self::IMAGESIZENAME,
+                'empty' => ""
             ), $atts));
             $relatedProducts = $this -> getRelatedProducts($post_id);
             if($size<>''):
                 $relatedProducts=$this->add_product_imagesrc($relatedProducts,$size);
             endif;
-            $result = $this->print_columns($relatedProducts,$cols);
+            if(count($relatedProducts)==0):
+                return "<div class='dms3-catalog-related_products empty'>".$empty."</div>";
+            endif;
+            $result = "<div class='dms3-catalog-related_products'>".$this->print_columns($relatedProducts,$cols)."</div>";
             return $result;
         }
 
@@ -994,12 +1007,17 @@
                 'post_id' => $post -> ID,
                 'cols' => 4,
                 'size' => self::IMAGESIZENAME,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_WINE_TYPE);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols);
+            if(empty($arr)):
+                $result="";
+            else:
+                $result = "<div class='dms3-catalog-wine-type'><span class='dms3-title'>$title</span>".$this->print_terms_columns($arr,$cols)."</div>";
+            endif;
             return $result;
         }
         
@@ -1009,12 +1027,17 @@
                 'post_id' => $post -> ID,
                 'cols' => 4,
                 'size' => self::IMAGESIZENAME,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_CHEESE_MILKANIMAL);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols);
+            if(empty($arr)):
+                $result="";
+            else:
+                $result = "<div class='dms3-catalog-milk-origin'><span class='dms3-title'>$title</span>".$this->print_terms_columns($arr,$cols)."</div>";
+            endif;
             return $result;            
         }
 
@@ -1024,12 +1047,17 @@
                 'post_id' => $post -> ID,
                 'cols' => 4,
                 'size' => self::IMAGESIZENAME,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_CHEESE_MILKTYPE);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols);
+            if(empty($arr)):
+                $result="";
+            else:
+                $result = "<div class='dms3-catalog-milk-type'><span class='dms3-title'>$title</span>".$this->print_terms_columns($arr,$cols)."</div>";
+            endif;
             return $result;            
         }
 
@@ -1039,12 +1067,17 @@
                 'post_id' => $post -> ID,
                 'cols' => 4,
                 'size' => self::IMAGESIZENAME,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_CHEESE_TEXTURE);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols);
+            if(empty($arr)):
+                $result="";
+            else:
+                $result = "<div class='dms3-catalog-cheese-texture'><span class='dms3-title'>$title</span>".$this->print_terms_columns($arr,$cols)."</div>";
+            endif;
             return $result;            
         }
 
@@ -1054,12 +1087,17 @@
                 'post_id' => $post -> ID,
                 'cols' => 1,
                 'size' => self::IMAGESIZENAME,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_PRODUCTREGION);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols);
+            if(empty($arr)):
+                $result="";
+            else:
+                $result = "<div class='dms3-catalog-region'><span class='dms3-title'>$title</span>".$this->print_terms_columns($arr,$cols)."</div>";
+            endif;
             return $result;            
         }
         
@@ -1071,18 +1109,23 @@
                 'size' => self::IMAGESIZENAME,
                 'description'=>true,
                 'name'=>true,
-                'withoutlinks'=>true
+                'withoutlinks'=>true,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_PRODUCER);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols,array(
-                'links'=>!$withoutlinks,
-                'description'=>$description,
-                'name'=>$name,
-            ) );
-            return $result;            
+            if(empty($arr)):
+                return "";
+            else:
+                $result = $this->print_terms_columns($arr,$cols,array(
+                    'links'=>!$withoutlinks,
+                    'description'=>$description,
+                    'name'=>$name,
+                ) );
+            endif;
+            return "<div class='dms3-catalog-product-producer'><span class='dms3-title'>$title</span>".$result."</div>";            
         }
         
         function shortcode_product_allergens($atts) {
@@ -1091,13 +1134,18 @@
                 'post_id' => $post -> ID,
                 'cols' => 4,
                 'size' => self::IMAGESIZENAME,
+                'title'=>'',
             ), $atts));
             $arr=get_the_terms($post_id,self::TAX_ALLERGENS_INFO);
             if($size<>''):
                 $arr=$this->add_terms_imagesrc($arr,$size);
             endif;
-            $result = $this->print_terms_columns($arr,$cols);
-            return $result;            
+            if(empty($arr)):
+                $result="";
+            else:            
+                $result = "<div class='dms3-catalog-allergens'><span class='dms3-title'>$title</span>".$this->print_terms_columns($arr,$cols)."</div>";
+            endif;
+            return $result;     
         }
 
         function shortcode_product_slogan($atts) {
@@ -1126,6 +1174,7 @@
                 'size' => self::IMAGESIZENAME,
                 'mode'=> 'image',
                 'index'=>-1,
+                'empty'=>'',
             ), $atts));
             $terms=get_the_terms($post_id,self::TAX_PRODUCER);
             if(is_array($terms)):
@@ -1154,7 +1203,7 @@
                     $products = $newQuery -> posts;
                     foreach ($products as $product) :
                         echo '<a href="' . get_permalink($product) . '" title="' . $product -> post_title . '">';
-                        if ("text" == $instance['mode']) :
+                        if ("text" == $mode) :
                             echo "<span class='demomentsomtres-catalog-product'>$product->post_title</span>";
                         else :
                             echo get_the_post_thumbnail($product -> ID, $size);
@@ -1165,14 +1214,14 @@
                 if($size<>''):
                     $arr=$this->add_terms_imagesrc($arr,$size);
                 endif;
-                $result = $this->print_terms_columns($arr,$cols);
+                $result = "<div class='dms3-catalog-products-in-mark'>".$this->print_terms_columns($arr,$cols)."</div>";
             else:
-                $result="";
+                $result="<div class='dms3-catalog-products-in-mark empty'>$empty</div>";
             endif;
             return $result;            
         }
 
-      function shortcode_product_name($atts) {
+        function shortcode_product_name($atts) {
             global $post;
             extract(shortcode_atts(array(
                 'post_id' => $post -> ID,
@@ -1186,5 +1235,45 @@
             $result = "<$tag class='dms3-product-name'>".$p->post_title."</$tag>";
             return $result;            
         }
-    }
+      
+        function shortcode_product_related_posts($atts) {
+            global $post;
+            extract(shortcode_atts(array(
+                'post_id' => $post -> ID,
+                'cols' => 4,
+                'size' => self::IMAGESIZENAME,
+                'empty'=>'',
+            ), $atts));
+            $arr=$this->getRelatedPosts($post_id);
+            if($size<>''):
+                $arr=$this->add_product_imagesrc($arr,$size);
+            endif;
+            if(empty($arr)):
+                $result=$empty;
+            else:            
+                $result = $this->print_columns($arr,$cols);
+            endif;
+            return "<div class='dms3-catalog-product-related-posts'>".$result."</div>";     
+        }
+
+        function shortcode_product_related_products($atts) {
+            global $post;
+            extract(shortcode_atts(array(
+                'post_id' => $post -> ID,
+                'cols' => 4,
+                'size' => self::IMAGESIZENAME,
+                'empty'=>'',
+            ), $atts));
+            $arr=$this->getProductRelatedProducts($post_id);
+            if($size<>''):
+                $arr=$this->add_product_imagesrc($arr,$size);
+            endif; 
+            if(empty($arr)):
+                $result=$empty;
+            else:            
+                $result = $this->print_columns($arr,$cols);
+            endif;
+            return "<div class='dms3-catalog-product-related-posts'>".$result."</div>";     
+        }    
+}
 ?>
